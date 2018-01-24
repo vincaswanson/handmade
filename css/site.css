@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #212a17;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+h1,
+h2,
+p,
+quote,
+button {
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: left;
+}
+h1,
+h2 {
+  color: #f1c711;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0 auto;
+}
+h1 {
+  padding-top: 13.333%;
+  font-size: 2.25rem; /* 36px */
+}
+h2 {
+  font-size: 1.5rem; /* 24px */
+  font-style: italic;
+}
+p,
+quote,
+span {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  margin-top: 0.75em; /* 12px */
+}
+p,
+quote {
+  margin-top: 1.5em; /* 24px */
+}
+p {
+  color: #ffffff;
+}
+quote,
+span {
+  color: #f1c711;
+  display: block;
+}
+button {
+  background-color: inherit;
+  border: 1px solid #f1c711;
+  border-radius: 0;
+  color: #f1c711;
+  cursor: pointer;
+  display: block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  margin-top: 0.75em;
+  padding: 0.25em 0.5em;
+  width: 100%;
+}
+button:hover {
+  background-color: #f1c711;
+  color: #212a17;
+}
+
+#turtle-shell {
+  margin: 0 auto;
+  max-width: 56.25rem; /* 900px */
+}
+
+header {
+  background-image: url('../assets/Front-cover-image_1200x377.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 23.563rem; /* 377px */
+}
+.header-content-frame {
+  margin: 0 auto;
+  width: 80%;
+}
+
+main {
+  background-color: #212a17;
+  position: relative;
+}
+.main-content-frame {
+  margin: 0 auto;
+  width: 80%;
+}
+.cta-frame {
+  max-width: 12.5em; /* 200px; */
+}
+.cta-frame img {
+  margin-top: -8em;
+  position: relative;
+}
+
+@media screen and (min-width: 37.5em) {
+  .main-content-frame {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-content-frame section:first-child {
+    width: 35%;
+  }
+  .main-content-frame section:last-child {
+    width: 65%;
+  }
+}
+
+.main-content-frame section p:first-child {
+  margin-top: 3em; /* 48px */
+}
+.main-content-frame section quote span {
+  text-align: right;
+  margin-right: 1.5%;
+}
+
+@media screen and (min-width: 37.5em) {
+  .text-block-frame {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+footer {
+  background-color: #13180d;
+  margin-top: 6em;
+  position: relative;
+}
+.footer-content-frame {
+  margin: 0 auto;
+  width: 80%;
+}
+@media screen and (min-width: 37.5em) {
+  .footer-content-frame {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer-content-frame section {
+  width: 65%;
+}
+.footer-content-frame figure {
+  display: none;
+}
+@media screen and (min-width: 37.5em) {
+  .footer-content-frame figure {
+    display: block;
+    margin-top: -3em;
+    padding-right: 1.5%;
+    position: relative;
+    text-align: right;
+    width: 35%;
+  }
+}
+.footer-content-frame figure img {
+  max-width: 200px;
+}
+.footer-text-frame {
+  padding: 1.5em 0;
+}
+.footer-text-frame p {
+  color: #f1c711;
+}
