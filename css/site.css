@@ -166,6 +166,11 @@ footer {
 .footer-text-frame {
   padding: 1.5em 0;
 }
-.footer-text-frame p {
+.footer-text-frame p, a:link, a:visited {
   color: #f1c711;
+  text-decoration: none;
 }
+.footer-text-frame a:hover{
+  text-decoration: underline;
+}
+
