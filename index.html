@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Handman - a new book by Gary Rogowski</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/site.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,6 +29,7 @@
             <button onclick="location.href='http://www.annieblooms.com/book/9781610353144'" type="button">Annie Bloom's &gt;</button>
             <button onclick="location.href='http://www.woodworkerslibrary.com/woodworking-books/handmade-creative-focus-in-the-age-of-distraction/'" type="button">Linden Publishing &gt;</button>
             <button onclick="location.href='http://www.broadwaybooks.net/book/9781610353144'" type="button">Broadway Books &gt;</button>
+            <p><a href="mailto:publicity@quilldriverbooks.com" target="_blank">Book, Author and Media Inquiries</a></p>
           </div>
         </section>
         <section>
@@ -40,6 +41,11 @@
               <p>The book argues for the need for individuals, for cultures to remain creative, to stay curious, and to keep
                 engaged with the physical world as a means of thinking more clearly.</p>
             </article>
+            <button class="accordion">Sample Excerpt</button>
+            <div class="panel">
+              <p>I don't want to cut corners. I want to add corners. I want shadows and places to hide. I want light hidden and mystery. I don't need the sleek lines of modernism speeding me to some new place. I want spots where my eye stops. Where it can rest. I have had enough of velocity, enough speed for another day of my life. The days go by too quickly now as it is. I want places where I can be quiet. I want what novelist Junichiro Tanizaki says about a Japanese room, that in its dim light it has "the magic of shadows."</p>
+              <p>This contrasts with our world where everything must be lit up, brightened, so that no one can rest away from the light. It is fine in its way in a shopping mall or office but it is also tiresome. Let there be places where I can sink into shadow and rest there, “the darkness seen by candlelight”. Does the darkness make the candle burn brighter? Does the space around an object make it stand stronger? The negative space creating the positive. The darkness helping the light. I need to be quiet, I need to be silent with my own desires. In this silence my work, my self grows stronger.</p>
+            </div>
             <article>
               <quote>"This is a book to inspire anyone who wants to do work that has meaning and purpose. It is also about becoming
                 a creative, compassionate, and forgiving person through the pursuit of excellence in one’s chosen vocation;
@@ -59,8 +65,9 @@
       <div class="footer-content-frame">
         <section class="footer-text-frame">
           <p>Interviews:
-            <br /> <a href="https://www.opb.org/radio/programs/thinkoutloud/segment/graduation-rates-year-in-business-news-working-with-your-hands/" target="_blank">OBP Think Out Loud</a>
-            <br /> <a href="www.allclassical.org/author-author/gary-rogowski/" target="_blank">Author-Author with Ed Goldberg</a>
+            <br /><a href="http://www.finewoodworking.com/2018/02/09/interview-gary-rogowski-book-giveaway" target="_blank">Fine Woodworking's Shop Talk Live</a>
+            <br /><a href="https://www.opb.org/radio/programs/thinkoutloud/segment/graduation-rates-year-in-business-news-working-with-your-hands/" target="_blank">NPR/ OPB: Think Out Loud with Dave Miller</a>
+            <br /><a href="www.allclassical.org/author-author/gary-rogowski/" target="_blank">Author-Author with Ed Goldberg</a>
           </p>
           <p>Television:
             <br /> <a href="http://katu.com/amnw/am-northwest-books-authors/gary-rogowski-handmade" target="_blank">KATU: AM Northwest</a>
@@ -68,9 +75,9 @@
           </p>
           <p>Podcasts:
             <br /> <a href="https://360woodworking.com/gary-rogowski-talks-new-book-360w360-e-255/" target="_blank">360 Woodworking</a>
-            <br /> <a href="http://www.buzzsprout.com/5339/616442-mwa164-gary-rogowski" target="_blank">MWA 1</a>
-            <br /> <a href="http://www.buzzsprout.com/5339/619883-mwa165-5-questions-for-gary-rogowski" target="_blank">MWA 2</a>
+            <br /> <a href="http://www.buzzsprout.com/5339/619883-mwa165-5-questions-for-gary-rogowski" target="_blank">Modern Woodworkers Association</a>
           </p>
+          <a href="https://facebook.com/NorthwestWoodworking" target="_blank"><img src="assets/facebook.png" alt="Facebook" class="social" /></a> <a href="https://twitter.com/GaryRogowski" target="_blank"><img src="assets/twitter.png" alt="Twitter" class="social" /></a> <a href="https://www.instagram.com/northwestwoodworking/" target="_blank"><img src="assets/instagram.png" alt="Instagram" class="social" /></a>
         </section>
         <figure>
           <img src="assets/walnut-stool_191x279.png" />
@@ -78,7 +85,23 @@
       </div>
     </footer>
   </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </body>
-<script src=""></script>
 
 </html>

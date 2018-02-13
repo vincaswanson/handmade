@@ -50,6 +50,45 @@ span {
   color: #f1c711;
   display: block;
 }
+
+.accordion {
+    background-color: #212a17;
+    color: #f1c711;
+    cursor: pointer;
+    padding: .5em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    text-decoration: underline;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #f1c711;
+    font-weight: bold;
+    float: left;
+    margin-right:.5em;
+    font-size:20px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 .5em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+.panel p {font-style: italic;}
+.panel p:first-child {margin-top:1.5em!important;}
 button {
   background-color: inherit;
   border: 1px solid #f1c711;
@@ -100,6 +139,20 @@ main {
   margin-top: -8em;
   position: relative;
 }
+.cta-frame p, a:link, a:visited {
+  color: #f1c711;
+  text-decoration: none;
+  font-family:arial,sans-serif;
+}
+.cta-frame a:hover{
+  text-decoration: underline;
+}
+
+.social {
+  display: inline-block;
+  max-width: 32px;
+  margin:1.5em 1.5em .2em .2em;
+}
 
 @media screen and (min-width: 37.5em) {
   .main-content-frame {
@@ -143,10 +196,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-}
-.footer-content-frame section {
+  .footer-content-frame section {
   width: 65%;
 }
+}
+
 .footer-content-frame figure {
   display: none;
 }
